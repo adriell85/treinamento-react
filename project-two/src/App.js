@@ -53,12 +53,7 @@ function App() {
     <div className="App">
       <p>Reenderizou {counter.current}</p>
       <p>
-        <input
-          ref={input}
-          type="text"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
+        <input ref={input} type="text" value={value} onChange={(e) => setValue(e.target.value)} />
       </p>
 
       {useMemo(() => {
